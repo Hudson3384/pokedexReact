@@ -8,3 +8,53 @@ nav {
 .navbar-img {
     width: 160px;
 }
+
+.searchbar-content {
+    display: flex;
+    flex-direction: row;
+    margin:  0 auto;
+    padding:  0 20px;
+    align-items: center;
+}
+
+.search-bar {
+    background-color: white;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    box-shadow: 0 2px 2px (0,0,0, 0.25);
+    border-radius: 3px;
+    border: none;
+
+}
+
+.search-btn button {
+    background-color: #0e6f9f;
+    border: none;
+    border-radius: 10px;
+    heigth:44px;
+    color:white;
+    padding: 10px 12px;
+}
+
+
+.App {
+    text-align: center;
+}
+
+
+.pokedex-header {
+    display: flex;
+    flex-direction;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.pokedex-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns (3, 1fr);
+}
