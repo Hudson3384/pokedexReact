@@ -5,10 +5,10 @@ import Pokemon from './Pokemon';
 const Pokedex = ({pokemons, loading, page, setPage, totalPages } ) => {
 
     const onLeftClickHandler = () => {
-        setPage(page > 0 && (page--))
+        setPage(page > 0 && (page-1))
     }
     const onRightClickHandler = () => {
-        setPage(page+1 <= totalPages && (page++))
+        setPage(page+1 <= totalPages && (page+1))
     }
     
 

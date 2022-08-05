@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState } from 'react';
 import { searchPokemon } from '../Api';
+
 
 
    
@@ -19,6 +20,8 @@ const SearchBar = () => {
     const onButtonClickHandler = () => {
         onSearchHandler(search)
     }
+
+    
     return (
         <div className='searchbar-content'>
            <div className='search-bar'>
