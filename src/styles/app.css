@@ -41,7 +41,7 @@ nav {
 }
 
 .search-btn button {
-    background-color: #0e6f9f;
+    background-color: #d4a373;
     border: none;
     border-radius: 10px;
     heigth:44px;
@@ -56,39 +56,37 @@ nav {
 
 
 .pokedex-header {
-    display: flex;
-    flex-direction;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
 }
 
 .pagination-container {
+    margin: 10px 15px;
     display:  flex;
-    width: 15vw;
     flex-direction: row;
-    padding-right: 10px;
+    padding-right: 3px;
     align-items:center;
-    justify-content: space-between;  
+    justify-content: flex-end; 
 }
 
 .pagination-btn{
+    margin: 0 10px;
     width: 15px;
     height:40px;
     border-radius:100%;
     border: none;
-    background-color: #0e6f9f;
+    background-color: #d4a373;
 
     width:40px;
 }
 
 .pokedex-grid {
+    margin: 10px;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .pokemon-card {
+    background-color: #fefae0;
     display: flex;
     box-shadow: 7px 4px 4px rgba(120, 120, 120, 0.3);
     border-radius: 3px;
@@ -97,8 +95,8 @@ nav {
 }
 
 .pokemon-image {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     margin-right:10px;
 }
 
@@ -141,9 +139,54 @@ nav {
     padding: 0 10px;
     text-transform: capitalize;
     border-radius: 10px; 
-    border: 1px solid #0e6f9f;
+    border: 1px solid #bc6c25;
 }
 
 .button {
     cursor: pointer;
+}
+
+@media(max-width:1040px) {
+    .pagination-container{
+        margin: 50px 15px 15px;
+    }
+    .pokedex-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pokemon-card {
+        flex-direction: column;
+        flex-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .card-body{
+        width: 100%;
+    }
+    .card-top {
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 500px) {
+    .searchbar-content {
+        flex-direction: column;
+    }
+    .search-btn button{
+        margin-top: 10px;
+       width:50vw;  
+    }
+    .pagination-container{
+        justify-content:  center;
+    }
+    .pokedex-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pokemon-image {
+        width: 150px;
+        height: 150px;
+        margin-right:10px;
+    }
+    
 }
