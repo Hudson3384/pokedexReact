@@ -5,16 +5,16 @@ const Navbar = () => {
 
     const {favoritePokemons} = useContext(favoritesContext)
     return (
-        <>
+        <header className="navbar-container">
             <nav>
-            <img 
+                <img 
                 src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"
                 alt="logo da Pokedex API"
                 className="navbar-img"
                  />
-        </nav>
-        <div>{favoritePokemons.length}❤</div>
-        </>
+            </nav>
+            <div>{favoritePokemons.length}❤️</div>
+        </header>
     )
 }
 

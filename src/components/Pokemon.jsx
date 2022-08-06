@@ -25,7 +25,7 @@ const Pokemon = ({pokemon}) => {
                                 <div key={index}  className='pokemon-type-text'>{type.type.name}</div>)
                         })}
                     </div>
-                    <button onClick={onHeartClick}>{heart}</button>
+                    <button onClick={onHeartClick} className="button">{heart}</button>
                 </div>
             </div>
            
